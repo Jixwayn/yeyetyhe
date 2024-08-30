@@ -1,0 +1,242 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #62a1ef;
+}
+.indent {
+    text-indent: 70px; /* กำหนดขนาดการเว้นวรรคที่ต้องการ */
+}
+.header {
+    background-image: url('https://i.imgur.com/Hq1t4fh.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 650px;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    overflow: hidden; /* ซ่อนการเลื่อน */
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+img {
+    display: block;
+    margin: 10px auto;
+}
+
+img.float-left {
+    float: left;
+    margin: 0 20px 20px 0;
+}
+
+img.float-right {
+    float: right;
+    margin: 0 0 20px 20px;
+}
+
+hr {
+    border: 0;
+    height: 2px;
+    background: #ffffff; /* สีของเส้น */
+    margin: 20px 0; /* ช่องว่างด้านบนและล่าง */
+}
+
+.center-text {
+    text-align: center;
+    font-family: 'Playfair Display', sans-serif;
+    color: #4261af;
+    font-size: 75px;
+    font-style: italic;
+    margin: 0;
+}
+
+.explain-text {
+    text-align: center;
+    font-family: 'Playfair Display', sans-serif;
+    color: #ffffff;
+    font-size: 28px;
+    margin: 5px 0; 
+    padding: 0 20px;
+    clear: both; 
+}
+
+.C-text {
+    font-family: 'Playfair Display', sans-serif;
+    color: #ffffff;
+    font-size: 16px;
+    margin: 5px 0; 
+    padding: 0 20px;
+    clear: both; 
+}
+.explainM-text {
+    
+    font-family: 'Playfair Display', sans-serif;
+    color: #ffffff;
+    font-size: 35px;
+    margin: 5px ;
+    padding-left: 50px; /* ช่องว่างข้างหน้า */
+    padding-right: 50px; /* ช่องว่างข้างหลัง */ 
+}
+.explainth-text {
+    
+    font-family: 'Taviraj', sans-serif;
+    color: #ffffff;
+    font-size: 25px;
+    margin: 5px ;
+    padding-left: 50px; /* ช่องว่างข้างหน้า */
+    padding-right: 50px; /* ช่องว่างข้างหลัง */ 
+}
+
+.explainth1-text {
+    
+    font-family: 'Taviraj', sans-serif;
+    color: #ffffff;
+    font-size: 20px;
+    margin: 5px ;
+    padding-left: 50px; /* ช่องว่างข้างหน้า */
+    padding-right: 50px; /* ช่องว่างข้างหลัง */ 
+}
+
+.bold-text {
+    font-weight: bold;
+}
+
+nav {
+    text-align: center;
+    /* background: linear-gradient(to right, #084da2,  #b3d3eb); */
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    font-family: 'Playfair Display', sans-serif;
+    text-decoration: none;
+    color: #256cc2;
+    background-color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: inline-block;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #0056b3;
+    transform: scale(1.1);
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+    padding: 10px;
+}
+
+.grid-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+}
+
+.container {
+    display: flex;
+    justify-content: flex-start; /* จัดรูปภาพและข้อความไปที่ซ้ายสุด */
+    padding: 20px;
+    box-sizing: border-box; /* รวม padding และ border ในขนาดขององค์ประกอบ */
+}
+
+.image-text {
+    display: flex;
+    align-items: flex-start;
+}
+
+.image {
+    width: 300px; /* ปรับขนาดตามที่ต้องการ */
+    height: auto;
+    border-radius: 8px;
+    margin-right: 50px; /* ระยะห่างระหว่างรูปภาพและข้อความ */
+}
+
+.text {
+    max-width: calc(100% - 170px); /* ปรับความกว้างตามที่ต้องการ และคำนึงถึงขนาดของรูปภาพและระยะห่าง */
+}
+
+.text h2 {
+    margin-top: 0;
+}
+
+.text p {
+    margin-bottom: 0;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+
+.form-container {
+    background-color: #ffffff;
+    padding: 50px;
+    border-radius: 15px;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 200%;
+}
+
+h2 {
+    font-family: 'Playfair Display', sans-serif;
+    color: #4261af;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+label {
+    text-align: center;
+
+    font-weight: bold;
+}
+
+input[type="text"], input[type="email"], textarea {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
